@@ -12,20 +12,20 @@ export const FeaturesSection = () => {
     <section className="pb-16 px-2 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 leading-loose">
       <FeatureCard iconElement={<FaCalendarPlus />} title="Create Your Pool">
         <p>Create a Confidence Pool for your favorite league below:</p>
-        <ul className="p-2">
-          <li className="p-1">
+        <ul className="p-2 list-[circle]">
+          <li className="p-1 ml-4">
             <span className="mr-2">NFL</span>
             <Chip color="primary" size="sm" variant="flat">
               Coming Aug 2024!
             </Chip>
           </li>
-          <li className="p-1">
+          <li className="p-1 ml-4">
             <span className="mr-2">MLS</span>
             <Chip color="primary" size="sm" variant="flat">
               Coming Feb 2024!
             </Chip>
           </li>
-          <li className="p-1">And more coming soon!</li>
+          <li className="p-1 ml-4">And more coming soon!</li>
         </ul>
       </FeatureCard>
       <FeatureCard iconElement={<FaEnvelope />} title="Invite Your Friends">

@@ -1,0 +1,1 @@
+export const SHADE_ON_HOVER = "hover:bg-opacity-50 hover:bg-slate-500"

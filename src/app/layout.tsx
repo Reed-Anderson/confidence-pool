@@ -2,7 +2,7 @@ import classNames from "classnames"
 import { Metadata } from "next"
 import { PropsWithChildren } from "react"
 import { GeistSans } from "geist/font"
-import { TopNavBar } from "@components/components/navbar"
+import { TopNavBar } from "@components/app/navbar/navbar"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -20,6 +20,7 @@ export default function RootLayout(props: PropsWithChildren) {
           "bg-gradient-to-b",
           "from-sky-50",
           "to-gray-100",
+          "overflow-hidden",
         )}
       >
         <TopNavBar />
