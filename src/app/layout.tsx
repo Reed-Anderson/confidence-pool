@@ -1,9 +1,9 @@
-import { Metadata } from "next"
 import classNames from "classnames"
+import { Metadata } from "next"
 import { PropsWithChildren } from "react"
 import { GeistSans } from "geist/font"
-import "./globals.css"
 import { TopNavBar } from "@components/components/navbar"
+import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,7 +23,9 @@ export default function RootLayout(props: PropsWithChildren) {
         )}
       >
         <TopNavBar />
-        {props.children}
+        <main className="mx-auto h-[calc(100%-64px)] overflow-auto">
+          {props.children}
+        </main>
       </body>
     </html>
   )
