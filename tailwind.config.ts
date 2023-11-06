@@ -11,7 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brand: "#eb9c34",
+        brand: "#363430",
         secondary: "#4287f5",
       },
       backgroundImage: {

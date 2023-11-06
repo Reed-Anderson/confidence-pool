@@ -27,24 +27,41 @@ export const NavbarMenu = (props: NavbarMenuProps) => {
         </DropdownTrigger>
         <DropdownMenu>
           {props.options.map((option) => (
-            <MenuItem key={option.title}>{option.title}</MenuItem>
+            <MenuItem key={option.title} startContent={option.startContent}>
+              {option.title}
+            </MenuItem>
           ))}
         </DropdownMenu>
       </Dropdown>
-      <div className="md:hidden" onClick={() => setIsOpen(true)}>
+      <span className="md:hidden" onClick={() => setIsOpen(true)}>
         {props.children}
-      </div>
+      </span>
       {isOpen && (
-        <div className="w-screen h-screen bg-gray-950 bg-opacity-90 absolute top-0 left-0 z-50 text-gray-100">
+        <div
+          className="
+            w-screen
+            h-screen
+            bg-gray-950
+            bg-opacity-90
+            absolute
+            top-0
+            left-0
+            z-50
+            text-gray-100
+            flex
+            justify-center
+            flex-col
+            items-center"
+        >
           <div
             className="absolute top-0 right-0 text-3xl p-5"
             onClick={() => setIsOpen(false)}
           >
             <FaTimes />
-            {props.options.map((option) => (
-              <NavbarMenuMobileOption key={option.title} {...option} />
-            ))}
           </div>
+          {props.options.map((option) => (
+            <NavbarMenuMobileOption key={option.title} {...option} />
+          ))}
         </div>
       )}
     </>
