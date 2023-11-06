@@ -22,7 +22,7 @@ export const NavbarMenu = (props: NavbarMenuProps) => {
   return (
     <>
       <Dropdown>
-        <DropdownTrigger className="hidden md:block">
+        <DropdownTrigger className="hidden md:flex">
           {props.children}
         </DropdownTrigger>
         <DropdownMenu>
