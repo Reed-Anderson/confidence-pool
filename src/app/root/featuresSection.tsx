@@ -1,4 +1,4 @@
-import { Chip } from "@nextui-org/react"
+import { Chip } from "@components/components/chip"
 import { FeatureCard } from "./featureCard"
 import {
   FaCalendarPlus,
@@ -15,15 +15,11 @@ export const FeaturesSection = () => {
         <ul className="p-2 list-[circle]">
           <li className="p-1 ml-4">
             <span className="mr-2">NFL</span>
-            <Chip color="primary" size="sm" variant="flat">
-              Coming Aug 2024!
-            </Chip>
+            <Chip className="blue-tag">Coming Aug 2024!</Chip>
           </li>
           <li className="p-1 ml-4">
             <span className="mr-2">MLS</span>
-            <Chip color="primary" size="sm" variant="flat">
-              Coming Feb 2024!
-            </Chip>
+            <Chip className="blue-tag">Coming Feb 2024!</Chip>
           </li>
           <li className="p-1 ml-4">And more coming soon!</li>
         </ul>

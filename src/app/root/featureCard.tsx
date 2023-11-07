@@ -1,5 +1,5 @@
+import { Card } from "@components/components/card"
 import { Divider } from "@components/components/divider"
-import { Card } from "@nextui-org/react"
 import { ReactNode } from "react"
 
 interface FeatureCardProps {
@@ -10,7 +10,7 @@ interface FeatureCardProps {
 
 export const FeatureCard = (props: FeatureCardProps) => {
   return (
-    <Card className="flex-grow max-w-md text-slate-800 text-left" radius="md">
+    <Card className="flex-grow max-w-md text-slate-800 text-left">
       <div className="p-4 w-full flex items-center gap-2">
         <span className="text-lg">{props.iconElement}</span>
         <span>{props.title}</span>

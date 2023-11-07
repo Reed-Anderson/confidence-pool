@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react"
+import { Button } from "@components/components/button"
 import Link from "next/link"
 
 export const HeroSection = () => {

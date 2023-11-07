@@ -1,10 +1,4 @@
 "use client"
-import {
-  Dropdown,
-  DropdownMenu,
-  DropdownTrigger,
-  MenuItem,
-} from "@nextui-org/react"
 import { ReactNode, useState } from "react"
 import { FaTimes } from "react-icons/fa"
 import {
@@ -21,7 +15,7 @@ export const NavbarMenu = (props: NavbarMenuProps) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <>
-      <Dropdown>
+      {/* <Dropdown>
         <DropdownTrigger className="hidden md:flex">
           {props.children}
         </DropdownTrigger>
@@ -32,7 +26,7 @@ export const NavbarMenu = (props: NavbarMenuProps) => {
             </MenuItem>
           ))}
         </DropdownMenu>
-      </Dropdown>
+      </Dropdown> */}
       <span className="md:hidden" onClick={() => setIsOpen(true)}>
         {props.children}
       </span>
