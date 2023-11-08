@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .blue-tag {
-    @apply bg-blue-500 bg-opacity-20 text-blue-600
+    @apply bg-blue-500 bg-opacity-20 text-blue-800
 }

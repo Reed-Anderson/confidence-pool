@@ -6,8 +6,12 @@ export const MainMenu = () => {
     <NavbarMenu
       ariaLabel="Main Menu"
       options={[
-        { href: "", startContent: <FaGamepad />, title: "Supported Leagues" },
-        { href: "", startContent: <FaQuestion />, title: "How To Play" },
+        {
+          href: "leagues",
+          startContent: <FaGamepad />,
+          title: "Supported Leagues",
+        },
+        { href: "rules", startContent: <FaQuestion />, title: "How To Play" },
       ]}
     >
       <div className={`text-white hover:bg-gray-100 hover:bg-opacity-20 p-2`}>

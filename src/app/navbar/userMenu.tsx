@@ -6,8 +6,8 @@ export const UserMenu = () => {
     <NavbarMenu
       ariaLabel="User Menu"
       options={[
-        { href: "", startContent: <FaSignInAlt />, title: "Log In" },
-        { href: "", startContent: <FaUser />, title: "Register" },
+        { href: "login", startContent: <FaSignInAlt />, title: "Log In" },
+        { href: "register", startContent: <FaUser />, title: "Register" },
       ]}
     >
       <div

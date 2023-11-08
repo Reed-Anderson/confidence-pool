@@ -2,7 +2,7 @@ import classNames from "classnames"
 import { Metadata } from "next"
 import { PropsWithChildren } from "react"
 import { GeistSans } from "geist/font"
-import { TopNavBar } from "@components/app/navbar/navbar"
+import { TopNavBar } from "@src/app/navbar/navbar"
 import "./globals.css"
 
 export const metadata: Metadata = {
