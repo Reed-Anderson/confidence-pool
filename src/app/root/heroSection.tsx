@@ -11,7 +11,7 @@ export const HeroSection = () => {
         Create confidence pools for your favorite leagues, invite your friends,
         and make every game exciting!
       </h2>
-      <Link href="/">
+      <Link href="/create" prefetch={true}>
         <Button className="bg-secondary text-white tracking-wide">
           Challenge Your Friends
         </Button>

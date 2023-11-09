@@ -1,4 +1,4 @@
-import { FaBars, FaGamepad, FaQuestion } from "react-icons/fa"
+import { FaBars, FaQuestion, FaTrophy } from "react-icons/fa"
 import { NavbarMenu } from "./navbarMenu"
 
 export const MainMenu = () => {
@@ -8,7 +8,7 @@ export const MainMenu = () => {
       options={[
         {
           href: "leagues",
-          startContent: <FaGamepad />,
+          startContent: <FaTrophy />,
           title: "Supported Leagues",
         },
         { href: "rules", startContent: <FaQuestion />, title: "How To Play" },

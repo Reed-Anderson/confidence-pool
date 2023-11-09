@@ -5,7 +5,7 @@ import { FeaturePredict } from "./featurePredict"
 
 export const FeaturesSection = () => {
   return (
-    <div className="pb-16 px-2 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 leading-loose">
+    <div className="pb-16 px-2 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
       <FeatureCreate />
       <FeatureInvite />
       <FeaturePredict />
