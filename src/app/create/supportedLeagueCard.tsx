@@ -1,30 +1,56 @@
-import { FaAngleRight } from "react-icons/fa"
+import { FaAngleRight, FaCheckCircle } from "react-icons/fa"
 import Image from "next/image"
-import { SupportedLeague } from "@prisma/client"
+import classNames from "classnames"
 
 interface SupportedLeagueCardProps {
-  league: SupportedLeague
+  title?: string
+  image?: string
+  selected?: boolean
 }
 
 export const SupportedLeagueCard = (props: SupportedLeagueCardProps) => {
   return (
     <div
-      key={props.league.id}
-      className="group rounded-md shadow-md hover:shadow-lg cursor-pointer
-            bg-gradient-to-b from-white to-gray-200 opacity-80 hover:scale-105 border"
+      className={classNames(
+        "group",
+        "flex",
+        "flex-col",
+        "rounded-md",
+        "overflow-hidden",
+        "shadow-md",
+        "hover:shadow-lg",
+        "cursor-pointer",
+        "bg-gradient-to-b",
+        "from-white",
+        "to-gray-200",
+        "opacity-80",
+        "hover:scale-105",
+        "border",
+        "w-72",
+        { "border-2": props.selected, "border-gray-900": props.selected },
+      )}
     >
-      <div className="h-52 flex items-center">
-        <Image
-          className="m-auto p-4"
-          src={props.league.logo}
-          alt={`${props.league.name} Logo`}
-          height={200}
-          width={200}
-        />
+      <div className="h-52 flex items-center relative">
+        {props.selected && <FaCheckCircle className="absolute top-4 left-4" />}
+        {props.image && (
+          <Image
+            className="m-auto p-4"
+            src={props.image}
+            alt={`${props.title} Logo`}
+            height={200}
+            width={200}
+          />
+        )}
       </div>
-      <h1 className="p-4 bg-gray-50 border-t text-sm flex justify-between items-center">
-        <span>{props.league.name}</span>
-        <FaAngleRight className="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <h1 className="p-4 bg-gray-50 border-t text-sm flex justify-between items-center flex-grow">
+        {props.title ? (
+          <>
+            <span>{props.title}</span>
+            <FaAngleRight className="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </>
+        ) : (
+          <span className="h-4 bg-gray-200 rounded-full dark:bg-gray-700 w-48" />
+        )}
       </h1>
     </div>
   )

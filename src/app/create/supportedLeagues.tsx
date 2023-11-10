@@ -21,6 +21,11 @@ export const SupportedLeagues = async () => {
 
   const supportedLeauges = await cacheGetSupportedLeagues()
   return supportedLeauges.map((league) => (
-    <SupportedLeagueCard key={league.id} league={league} />
+    <SupportedLeagueCard
+      key={league.id}
+      title={league.name}
+      image={league.logo}
+      selected={league.shortName === "LCS"}
+    />
   ))
 }
