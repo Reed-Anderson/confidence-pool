@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 
 interface ButtonProps {
   children: ReactNode
-  className: string
+  className?: string
 }
 
 export const Button = (props: ButtonProps) => {

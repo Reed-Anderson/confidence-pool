@@ -1,4 +1,4 @@
-import { FaAngleRight, FaCheckCircle } from "react-icons/fa"
+import { FaCheckCircle } from "react-icons/fa"
 import Image from "next/image"
 import classNames from "classnames"
 
@@ -12,7 +12,6 @@ export const SupportedLeagueCard = (props: SupportedLeagueCardProps) => {
   return (
     <div
       className={classNames(
-        "group",
         "flex",
         "flex-col",
         "rounded-md",
@@ -44,10 +43,7 @@ export const SupportedLeagueCard = (props: SupportedLeagueCardProps) => {
       </div>
       <h1 className="p-4 bg-gray-50 border-t text-sm flex justify-between items-center flex-grow">
         {props.title ? (
-          <>
-            <span>{props.title}</span>
-            <FaAngleRight className="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </>
+          <span>{props.title}</span>
         ) : (
           <span className="h-4 bg-gray-200 rounded-full dark:bg-gray-700 w-48" />
         )}
