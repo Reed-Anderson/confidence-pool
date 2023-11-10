@@ -12,7 +12,7 @@ export const RadioOption = (props: RadioOptionProps) => {
   return (
     <div
       className={classNames(
-        "flex gap-4 items-center p-2 rounded-md border border-gray-200",
+        "flex gap-4 items-center p-4 rounded-md border border-gray-200",
         {
           "border bg-white": props.selected,
         },
@@ -29,7 +29,7 @@ export const RadioOption = (props: RadioOptionProps) => {
       />
       <label
         htmlFor={props.htmlId}
-        className="cursor-pointer flex flex-col space-x-2 text-gray-700"
+        className="cursor-pointer flex flex-col space-x-2 space-y-2 text-gray-700"
       >
         <span>{props.text}</span>
         <p className="text-sm text-gray-600">{props.description}</p>

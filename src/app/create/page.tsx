@@ -12,7 +12,10 @@ export default async function CreatePage() {
       <div className="flex-grow overflow-auto">
         <div className="container pb-8 m-auto">
           <h2 className="py-5 font-semibold">Pool Name</h2>
-          <input className="border h-8 w-72 indent-2 font-light" />
+          <input
+            className="border h-8 w-72 indent-2 font-light"
+            aria-label="Pool Name"
+          />
           <LeagueSelection />
           <div className="flex gap-8">
             <MissedDeadlinePolicy />

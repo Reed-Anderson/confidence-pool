@@ -1,0 +1,10 @@
+1. Create Page - Adjust for mobile
+
+2. Create Page - Zustand store to control the form
+
+3. Next Page - Log In/Register page
+
+4. Candidates for next design:
+  - Pool Overview
+  - Pick Page
+
