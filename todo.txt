@@ -1,8 +1,12 @@
-1. Create Page - Zustand store to control the form
+ - Put policies into database
+ - Prevent LCS from score selecting
+ - Submit form via server action
 
-2. Next Page - Log In/Register page
+ - Next Page - Log In/Register page
 
-3. Candidates for next design:
+ - Candidates for next design:
   - Pool Overview
   - Pick Page
 
+
+ - Add EPL

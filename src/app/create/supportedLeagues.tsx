@@ -23,9 +23,9 @@ export const SupportedLeagues = async () => {
   return supportedLeauges.map((league) => (
     <SupportedLeagueCard
       key={league.id}
-      title={league.name}
       image={league.logo}
-      selected={league.shortName === "LCS"}
+      leagueId={league.id}
+      title={league.name}
     />
   ))
 }
