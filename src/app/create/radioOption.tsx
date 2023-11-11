@@ -12,7 +12,7 @@ export const RadioOption = (props: RadioOptionProps) => {
   return (
     <div
       className={classNames(
-        "flex gap-4 items-center p-4 rounded-md border border-gray-200",
+        "flex gap-4 items-center p-4 rounded-md border border-gray-900",
         {
           "border bg-white": props.selected,
         },

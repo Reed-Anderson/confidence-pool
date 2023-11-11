@@ -26,7 +26,7 @@ export const SupportedLeagueCard = (props: SupportedLeagueCardProps) => {
         "hover:scale-105",
         "border",
         "w-72",
-        { "border-2": props.selected, "border-gray-900": props.selected },
+        { border: props.selected, "border-gray-900": props.selected },
       )}
     >
       <div className="h-52 flex items-center relative">

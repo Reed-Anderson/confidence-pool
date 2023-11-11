@@ -6,7 +6,7 @@ export const LeagueSelection = () => {
   return (
     <>
       <h2 className="py-5 font-semibold">Select a league</h2>
-      <div className="flex flex-wrap gap-8 px-2 md:px-0">
+      <div className="flex flex-wrap flex-col md:flex-row items-center gap-8">
         <Suspense fallback={<SupportedLeaguesFallback />}>
           <SupportedLeagues />
         </Suspense>
