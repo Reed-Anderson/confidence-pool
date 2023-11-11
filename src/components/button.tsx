@@ -1,18 +1,17 @@
-import { ReactNode } from "react"
+import { ButtonHTMLAttributes, DetailedHTMLProps } from "react"
 
-interface ButtonProps {
-  children: ReactNode
-  className?: string
-}
+export type ButtonProps = DetailedHTMLProps<
+  ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
+>
 
 export const Button = (props: ButtonProps) => {
   return (
     <button
+      {...props}
       className={
         "shadow-sm p-2 hover:scale-105 rounded-sm" + " " + props.className
       }
-    >
-      {props.children}
-    </button>
+    />
   )
 }

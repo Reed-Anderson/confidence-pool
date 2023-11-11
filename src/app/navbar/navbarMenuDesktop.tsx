@@ -18,7 +18,7 @@ export const NavbarMenuDesktop = (props: NavbarMenuProps) => {
         {props.children}
       </Trigger>
       <Portal>
-        <Content className="p-2 bg-white rounded-sm">
+        <Content className="p-2 bg-white rounded-sm z-30">
           {props.options.map((option, index) => (
             <Fragment key={option.title}>
               {index > 0 && <Divider />}

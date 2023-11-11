@@ -10,3 +10,7 @@
 
 
  - Add EPL
+
+ - Bugs:
+  - Double tab on challenge your friends button
+  - Some weird tabbing on login/register page
