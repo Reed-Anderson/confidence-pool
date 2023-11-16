@@ -11,7 +11,9 @@ export const MissedDeadlinePolicy = () => {
   )
   return (
     <div className="flex-grow max-w-xl">
-      <h2 className="py-5 font-semibold">Missed Deadline Policy</h2>
+      <h2 className="pt-3 pb-1 font-semibold text-sm">
+        Missed Deadline Policy
+      </h2>
       <div className="flex flex-col gap-4">
         <RadioOption
           description="Players are granted a Grace Week on their first deadline miss, during which their score will be the average of those who submitted picks. Subsequent misses will be subject to the Low Score policy."

@@ -14,7 +14,7 @@ export const RadioOption = (props: RadioOptionProps) => {
   return (
     <div
       className={classNames(
-        "flex gap-4 items-center p-4 rounded-md border border-gray-900",
+        "flex gap-4 items-center p-2 rounded-md border border-gray-900",
         {
           "border bg-white": selected,
         },
@@ -27,7 +27,7 @@ export const RadioOption = (props: RadioOptionProps) => {
         type="radio"
         id={props.htmlId}
         name={props.groupName}
-        className="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
+        className="text-indigo-600 border-gray-300 focus:ring-indigo-500"
         onChange={() => props.setValue(props.htmlId)}
       />
       <label

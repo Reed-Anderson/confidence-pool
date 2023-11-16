@@ -9,8 +9,8 @@ export const CorrectScoreBonus = () => {
   )
   return (
     <div className="flex-grow max-w-xl">
-      <h2 className="py-5 font-semibold">Correct Score Bonus</h2>
-      <div className="flex flex-col gap-4">
+      <h2 className="pt-3 pb-1 font-semibold text-sm">Correct Score Bonus</h2>
+      <div className="flex flex-col gap-2">
         <RadioOption
           description="Players can score double points for correctly predicting the score in addition to the correct outcome."
           groupName="scoreBonus"
