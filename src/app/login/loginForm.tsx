@@ -9,7 +9,11 @@ export const LoginForm = () => {
   const [password, setPassword] = useState("")
 
   return (
-    <Tabs.Content className="gap-8 flex flex-col" value="LogIn">
+    <Tabs.Content
+      className="gap-8 flex flex-col"
+      tabIndex={-1}
+      value="LogIn"
+    >
       <LabeledTextInput
         inputId="email"
         label="Email"

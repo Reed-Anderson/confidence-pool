@@ -8,7 +8,10 @@ export const TopNavBar = () => {
       <div className="mx-auto flex items-center">
         <MainMenu />
         <Link href="/">
-          <button className="text-white text-2xl tracking-tight hover:text-slate-200 p-2 font-extralight">
+          <button
+            className="text-white text-2xl tracking-tight hover:text-slate-200 p-2 font-extralight"
+            tabIndex={-1}
+          >
             Confidence Pools
           </button>
         </Link>

@@ -1,16 +1,15 @@
- - Put policies into database
- - Prevent LCS from score selecting
- - Submit form via server action
+Database Work:
+ - Add Settings/Policies
+ - Prevent LCS from score predicting
 
- - Next Page - Log In/Register page
+Page Design Work:
+ - My Pools
+ - pool/My Picks
+ - pool/Standings
 
- - Candidates for next design:
-  - Pool Overview
-  - Pick Page
+Major Work:
+ - Next Auth
+ - Create Pool
 
-
- - Add EPL
-
- - Bugs:
-  - Double tab on challenge your friends button
-  - Some weird tabbing on login/register page
+Workflow Design:
+ - Inviting others to pools

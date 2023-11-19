@@ -14,7 +14,10 @@ import { Fragment } from "react"
 export const NavbarMenuDesktop = (props: NavbarMenuProps) => {
   return (
     <Root>
-      <Trigger className="hidden md:flex" aria-label={props.ariaLabel}>
+      <Trigger
+        className="hidden md:flex"
+        aria-label={props.ariaLabel}
+      >
         {props.children}
       </Trigger>
       <Portal>
@@ -23,7 +26,7 @@ export const NavbarMenuDesktop = (props: NavbarMenuProps) => {
             <Fragment key={option.title}>
               {index > 0 && <Divider />}
               <a href={option.href}>
-                <Item className="flex items-center gap-2 p-2 hover:bg-gray-100 cursor-pointer">
+                <Item className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100 cursor-pointer">
                   {option.startContent}
                   {option.title}
                 </Item>
