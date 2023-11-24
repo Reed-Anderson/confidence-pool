@@ -3,11 +3,13 @@ import { FaCheckCircle } from "react-icons/fa"
 import Image from "next/image"
 import classNames from "classnames"
 import { useCreateStore } from "./create.store"
+import { ReactNode } from "react"
 
 interface SupportedLeagueCardProps {
   leagueId?: number
   title?: string
   image?: string
+  faIcon?: ReactNode
 }
 
 export const SupportedLeagueCard = (props: SupportedLeagueCardProps) => {
@@ -28,7 +30,7 @@ export const SupportedLeagueCard = (props: SupportedLeagueCardProps) => {
         "cursor-pointer",
         "bg-gradient-to-b",
         "from-white",
-        "to-gray-200",
+        "to-gray-100",
         "opacity-80",
         "hover:scale-105",
         "border",
@@ -47,6 +49,11 @@ export const SupportedLeagueCard = (props: SupportedLeagueCardProps) => {
             height={200}
             width={200}
           />
+        )}
+        {props.faIcon && (
+          <div className="w-full text-4xl text-gray-50 flex justify-center items-center">
+            <div className="p-4 bg-gray-400 rounded-full">{props.faIcon}</div>
+          </div>
         )}
       </div>
       <h1 className="p-4 bg-gray-50 border-t text-sm flex justify-between items-center flex-grow w-full">

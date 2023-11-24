@@ -1,4 +1,4 @@
-import { FaAngleDown, FaSignInAlt, FaUser } from "react-icons/fa"
+import { FaAngleDown, FaIdCard, FaSignInAlt, FaUser } from "react-icons/fa"
 import { NavbarMenu } from "./navbarMenu"
 
 export const UserMenu = () => {
@@ -11,6 +11,11 @@ export const UserMenu = () => {
           href: "/login?register=true",
           startContent: <FaUser />,
           title: "Register",
+        },
+        {
+          title: "My Pools",
+          href: "/pools",
+          startContent: <FaIdCard />,
         },
       ]}
     >
