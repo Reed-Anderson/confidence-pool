@@ -3,7 +3,6 @@ Database Work:
  - Prevent LCS from score predicting
 
 Page Design Work:
- - My Pools
  - pool/My Picks
  - pool/Standings
 
@@ -11,5 +10,9 @@ Major Work:
  - Next Auth
  - Create Pool
 
-Workflow Design:
- - Inviting others to pools
+List of pages:
+ - homepage
+ - login
+ - pools
+ - pools/[id]
+ - create

@@ -9,6 +9,7 @@ export const PoolName = () => {
     <>
       <h2 className="pt-3 pb-1 font-semibold text-sm">Pool Name</h2>
       <TextInput
+        className="m-auto"
         onChange={(e) => setPoolName(e.target.value)}
         maxLength={80}
         value={poolName}

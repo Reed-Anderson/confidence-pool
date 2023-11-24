@@ -3,6 +3,7 @@ import { Banner } from "@components/banner"
 import { ImageCard } from "@components/imageCard"
 import { EmptyPoolsContainer } from "./emptyPoolsContainer"
 import { AddPoolButton } from "./addPoolButton"
+import { TileContainer } from "@components/tileContainer"
 
 export default function PoolsPage() {
   const pools = [
@@ -15,7 +16,7 @@ export default function PoolsPage() {
   return (
     <>
       <Banner title="My Pools" />
-      <div className="container m-auto p-8 gap-8 flex flex-wrap">
+      <TileContainer className="pt-8 container m-auto">
         {pools.length > 0 && (
           <>
             {pools.map((pool) => (
@@ -34,7 +35,7 @@ export default function PoolsPage() {
           </>
         )}
         {pools.length === 0 && <EmptyPoolsContainer />}
-      </div>
+      </TileContainer>
     </>
   )
 }
