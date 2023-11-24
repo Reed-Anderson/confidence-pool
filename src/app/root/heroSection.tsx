@@ -1,5 +1,4 @@
-import { Button } from "@components/button"
-import Link from "next/link"
+import { LinkButton } from "@components/linkButton"
 
 export const HeroSection = () => {
   return (
@@ -11,17 +10,12 @@ export const HeroSection = () => {
         Create confidence pools for your favorite leagues, invite your friends,
         and make every game exciting!
       </h2>
-      <Link
+      <LinkButton
         href="/create"
-        prefetch={true}
+        buttonClassName="bg-secondary text-white tracking-wide"
       >
-        <Button
-          className="bg-secondary text-white tracking-wide"
-          tabIndex={-1}
-        >
-          Challenge Your Friends
-        </Button>
-      </Link>
+        Challenge Your Friends
+      </LinkButton>
     </section>
   )
 }

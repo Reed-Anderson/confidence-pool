@@ -5,6 +5,7 @@ import { FaCheckCircle } from "react-icons/fa"
 
 interface ImageCardProps {
   faIcon?: ReactNode
+  faIconParentClassName?: string
   image?: string
   onClick?: () => void
   selected?: boolean
@@ -48,7 +49,14 @@ export const ImageCard = (props: ImageCardProps) => {
         )}
         {props.faIcon && (
           <div className="w-full text-4xl text-gray-50 flex justify-center items-center">
-            <div className="p-4 bg-gray-400 rounded-full">{props.faIcon}</div>
+            <div
+              className={
+                "p-4 bg-gray-400 rounded-full " +
+                (props.faIconParentClassName || "")
+              }
+            >
+              {props.faIcon}
+            </div>
           </div>
         )}
       </div>
