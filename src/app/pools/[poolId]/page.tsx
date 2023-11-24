@@ -2,6 +2,7 @@ import { Banner } from "@components/banner"
 import { PoolSidebar } from "./poolSidebar"
 import { ViewSwitch } from "./viewSwitch"
 import { StandingsView } from "./standingsView"
+import { MyPicksView } from "./myPicks/myPicksView"
 
 export default function PoolDetailsPage() {
   return (
@@ -16,7 +17,7 @@ export default function PoolDetailsPage() {
         <div className="flex-grow p-4 flex flex-col items-start md:flex-row justify-center gap-4">
           <ViewSwitch
             viewLookup={{
-              myPicks: <div />,
+              myPicks: <MyPicksView />,
               standings: <StandingsView />,
               weeklyResults: <div />,
               settings: <div />,
