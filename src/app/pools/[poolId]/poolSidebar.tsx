@@ -1,4 +1,5 @@
 "use client"
+import { FaCrown } from "react-icons/fa"
 import { SidebarLink, View } from "./sidebarLink"
 
 export const PoolSidebar = () => {
@@ -19,6 +20,11 @@ export const PoolSidebar = () => {
       <SidebarLink
         title="Settings"
         view={View.Settings}
+      />
+      <SidebarLink
+        title="Commissioner"
+        titleIcon={<FaCrown className="text-amber-400" />}
+        view={View.Commissioner}
       />
     </div>
   )

@@ -4,7 +4,7 @@ import { NavbarMenu } from "./navbarMenu"
 export const UserMenu = () => {
   return (
     <NavbarMenu
-      ariaLabel="User Menu"
+      ariaLabel="Reed"
       options={[
         { href: "/login", startContent: <FaSignInAlt />, title: "Log In" },
         {

@@ -13,7 +13,7 @@ export const LinkButton = (props: LinkButtonProps) => {
   return (
     <Link
       className={"block " + (props.linkClassName || "")}
-      href="/create"
+      href={props.href}
     >
       <Button
         className={props.buttonClassName}

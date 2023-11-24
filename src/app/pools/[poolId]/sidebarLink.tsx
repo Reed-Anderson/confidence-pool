@@ -1,10 +1,12 @@
 "use client"
 import classNames from "classnames"
 import { parseAsStringEnum, useQueryState } from "next-usequerystate"
+import { ReactNode } from "react"
 import { FaAngleRight } from "react-icons/fa"
 
 interface SidebarLinkProps {
   title: string
+  titleIcon?: ReactNode
   view: View
 }
 
@@ -13,6 +15,7 @@ export enum View {
   Standings = "standings",
   WeeklyResults = "weeklyResults",
   Settings = "settings",
+  Commissioner = "commissioner",
 }
 
 export const SidebarLink = (props: SidebarLinkProps) => {
@@ -49,7 +52,10 @@ export const SidebarLink = (props: SidebarLinkProps) => {
       onClick={() => setView(props.view)}
     >
       <div className="flex items-center justify-between">
-        {props.title}
+        <span className="flex gap-2 items-center">
+          {props.title}
+          {props.titleIcon}
+        </span>
         <FaAngleRight
           className={classNames(
             "text-gray-600",
