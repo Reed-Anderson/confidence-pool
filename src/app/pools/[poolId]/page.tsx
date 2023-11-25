@@ -12,9 +12,9 @@ export default function PoolDetailsPage() {
         title="Reed's Cool Pool"
         secondaryTitle="Major League Soccer"
       />
-      <div className="flex h-full container m-auto">
+      <div className="flex h-full container overflow-hidden m-auto">
         <PoolSidebar />
-        <div className="flex-grow p-4 flex flex-col items-start md:flex-row justify-center gap-4">
+        <div className="flex-grow overflow-hidden p-4 flex items-start flex-row justify-center gap-4">
           <ViewSwitch
             viewLookup={{
               myPicks: <MyPicksView />,

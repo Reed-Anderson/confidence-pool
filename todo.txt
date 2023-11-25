@@ -1,3 +1,7 @@
+Small Work:
+ - My Picks sidebar should be sticky or fixed
+ - My Picks sidebar should be a dropdown on top on mobile screens
+
 Database Work:
  - Add Settings/Policies
  - Prevent LCS from score predicting
