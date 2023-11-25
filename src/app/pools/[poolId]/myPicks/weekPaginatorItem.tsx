@@ -1,4 +1,5 @@
 import classNames from "classnames"
+import { LegacyRef, useEffect, useRef } from "react"
 import {
   FaCalendarCheck,
   FaCalendarTimes,
@@ -24,12 +25,20 @@ interface WeekPaginatorItemProps {
 }
 
 export const WeekPaginatorItem = (props: WeekPaginatorItemProps) => {
+  const scrollRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    if (props.isSelected) {
+      scrollRef.current?.scrollIntoView({ inline: "center", block: "nearest" })
+    }
+  }, [props.isSelected, scrollRef])
+
   return (
     <button
       className={classNames(
         "flex",
         "items-center",
-        "gap-1",
+        "gap-2",
         "py-2 px-3 rounded-md",
         "text-gray-500",
         "text-sm",
@@ -42,6 +51,7 @@ export const WeekPaginatorItem = (props: WeekPaginatorItemProps) => {
           "text-gray-900": props.isSelected,
         },
       )}
+      ref={scrollRef as LegacyRef<HTMLButtonElement> /* TODO: ?? */}
     >
       <span className="text-lg">
         {props.weekStatus === WeekStatus.Submitted && (
@@ -62,7 +72,6 @@ export const WeekPaginatorItem = (props: WeekPaginatorItemProps) => {
         {props.weekStatus === WeekStatus.DueSoon && (
           <FaRegClock className="text-blue-500" />
         )}
-        {/* {props.weekStatus === WeekStatus.TurnedIn && ()} */}
       </span>
       {props.title}
     </button>

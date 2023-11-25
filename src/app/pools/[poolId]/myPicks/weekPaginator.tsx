@@ -6,31 +6,31 @@ export const WeekPaginator = () => {
   return (
     <ScrollArea.Root className="w-full m-auto">
       <ScrollArea.Viewport>
-        <div className="flex w-fit gap-2 m-auto pb-4 pt-1">
+        <div className="flex items-center w-fit gap-2 m-auto pb-4 pt-1">
           <WeekPaginatorItem
             title="Week 1"
-            weekStatus={WeekStatus.DueSoon}
+            weekStatus={WeekStatus.Submitted}
           />
           <WeekPaginatorItem
             title="Week 2"
-            weekStatus={WeekStatus.GraceWeek}
+            weekStatus={WeekStatus.Submitted}
           />
           <WeekPaginatorItem
             title="Week 3"
-            weekStatus={WeekStatus.MissedDeadline}
+            weekStatus={WeekStatus.Submitted}
           />
           <WeekPaginatorItem
-            isSelected
             title="Week 4"
             weekStatus={WeekStatus.Submitted}
           />
           <WeekPaginatorItem
             title="Week 5"
-            weekStatus={WeekStatus.SubmittedEarly}
+            weekStatus={WeekStatus.Winner}
           />
           <WeekPaginatorItem
-            title="Week 5"
-            weekStatus={WeekStatus.Winner}
+            isSelected
+            title="Week 6"
+            weekStatus={WeekStatus.DueSoon}
           />
           <WeekPaginatorItem title="Week 5" />
           <WeekPaginatorItem title="Week 5" />
