@@ -9,12 +9,16 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"correctness": {
+				"noUnusedVariables": "warn"
+			}
 		}
 	},
 	"javascript": {
 		"formatter": {
-			"semicolons": "asNeeded"
+			"semicolons": "asNeeded",
+			"trailingComma": "none"
 		}
 	}
 }

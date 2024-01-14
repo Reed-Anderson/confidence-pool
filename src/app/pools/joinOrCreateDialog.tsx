@@ -27,6 +27,7 @@ export const JoinOrCreateDialog = (props: JoinOrCreateDialogProps) => {
 			<div
 				className="p-8 bg-white rounded-md z-40 flex flex-col gap-4 w-80"
 				onClick={(e) => e.stopPropagation()}
+				onKeyUp={(e) => e.key === "Escape" && props.closeFunction()}
 			>
 				<h1 className="hidden">Add New Pool</h1>
 				<div className="flex flex-col gap-2">
