@@ -1,20 +1,24 @@
 "use client"
 import { useState } from "react"
 import { FaTimes } from "react-icons/fa"
-import { NavbarMenuMobileOption } from "./navbarMenuMobileOption"
 import { NavbarMenuProps } from "./navbarMenu"
+import { NavbarMenuMobileOption } from "./navbarMenuMobileOption"
 
 export const NavbarMenuMobile = (props: NavbarMenuProps) => {
-  const [isOpen, setIsOpen] = useState(false)
+	const [isOpen, setIsOpen] = useState(false)
 
-  return (
-    <>
-      <span className="md:hidden" onClick={() => setIsOpen(true)}>
-        {props.children}
-      </span>
-      {isOpen && (
-        <div
-          className="
+	return (
+		<>
+			<button
+				className="md:hidden"
+				onClick={() => setIsOpen(true)}
+				type="button"
+			>
+				{props.children}
+			</button>
+			{isOpen && (
+				<div
+					className="
             w-screen
             h-screen
             bg-gray-950
@@ -28,18 +32,22 @@ export const NavbarMenuMobile = (props: NavbarMenuProps) => {
             justify-center
             flex-col
             items-center"
-        >
-          <div
-            className="absolute top-0 right-0 text-3xl p-5"
-            onClick={() => setIsOpen(false)}
-          >
-            <FaTimes />
-          </div>
-          {props.options.map((option) => (
-            <NavbarMenuMobileOption key={option.title} {...option} />
-          ))}
-        </div>
-      )}
-    </>
-  )
+				>
+					<button
+						className="absolute top-0 right-0 text-3xl p-5"
+						onClick={() => setIsOpen(false)}
+						type="button"
+					>
+						<FaTimes />
+					</button>
+					{props.options.map((option) => (
+						<NavbarMenuMobileOption
+							key={option.title}
+							{...option}
+						/>
+					))}
+				</div>
+			)}
+		</>
+	)
 }

@@ -1,23 +1,23 @@
 export function convertToOrdinal(number: number): string {
-    if (isNaN(number) || number < 1) {
-        return 'Invalid input'
-    }
+	if (Number.isNaN(number) || number < 1) {
+		return "Invalid input"
+	}
 
-    const lastDigit = number % 10
-    const lastTwoDigits = number % 100
+	const lastDigit = number % 10
+	const lastTwoDigits = number % 100
 
-    if (lastTwoDigits >= 11 && lastTwoDigits <= 13) {
-        return `${number}th`
-    }
+	if (lastTwoDigits >= 11 && lastTwoDigits <= 13) {
+		return `${number}th`
+	}
 
-    switch (lastDigit) {
-        case 1:
-            return `${number}st`
-        case 2:
-            return `${number}nd`
-        case 3:
-            return `${number}rd`
-        default:
-            return `${number}th`
-    }
+	switch (lastDigit) {
+		case 1:
+			return `${number}st`
+		case 2:
+			return `${number}nd`
+		case 3:
+			return `${number}rd`
+		default:
+			return `${number}th`
+	}
 }
