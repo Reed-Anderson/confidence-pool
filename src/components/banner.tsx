@@ -10,8 +10,8 @@ interface BannerProps {
 
 export const Banner = (props: BannerProps) => {
 	return (
-		<div className="border-b bg-white z-10 sticky top-0 px-2">
-			<div className="flex items-center gap-2 container m-auto">
+		<div className="border-b bg-white z-10 sticky top-0">
+			<div className="flex items-center gap-2 container px-8 m-auto">
 				{props.backLink && (
 					<LinkButton
 						buttonClassName="border h-8 w-8 flex items-center justify-center

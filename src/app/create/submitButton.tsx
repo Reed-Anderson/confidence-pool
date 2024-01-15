@@ -14,7 +14,7 @@ export const SubmitButton = () => {
 	return (
 		<Button
 			className={classNames(
-				"bg-gray-700 text-white my-4 w-full md:w-auto",
+				"bg-gray-700 text-white my-4 w-full md:w-auto px-4",
 				{
 					"opacity-40": !formIsValid
 				}

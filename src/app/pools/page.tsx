@@ -19,7 +19,7 @@ export default async function PoolsPage() {
 	return (
 		<>
 			<Banner title="My Pools" />
-			<TileContainer className="pt-8 container m-auto">
+			<TileContainer className="pt-8 container px-8 m-auto">
 				{pools.length > 0 && (
 					<>
 						{pools.map((pool) => (

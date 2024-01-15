@@ -27,7 +27,7 @@ export const RadioOption = (props: RadioOptionProps) => {
 				type="radio"
 				id={props.htmlId}
 				name={props.groupName}
-				className="text-indigo-600 border-gray-300 focus:ring-indigo-500"
+				className="text-indigo-600 border-gray-300 focus:ring-indigo-500 shrink-0"
 				onChange={() => props.setValue(props.htmlId)}
 			/>
 			<label

@@ -1,4 +1,5 @@
 "use client"
+import SectionHeader from "@components/sectionHeader"
 import { useCreateStore } from "./create.store"
 import { RadioOption } from "./radioOption"
 
@@ -10,11 +11,9 @@ export const MissedDeadlinePolicy = () => {
 		(state) => state.setMissedDeadlinePolicy
 	)
 	return (
-		<div className="flex-grow max-w-xl">
-			<h2 className="pt-3 pb-1 font-semibold text-sm">
-				Missed Deadline Policy
-			</h2>
-			<div className="flex flex-col gap-4">
+		<section className="flex-grow max-w-xl">
+			<SectionHeader title="Missed Deadline Policy" />
+			<div className="flex flex-col gap-2">
 				<RadioOption
 					description="Players are granted a Grace Week on their first deadline miss, during which their score will be the average of those who submitted picks. Subsequent misses will be subject to the Low Score policy."
 					groupName="missingPolicy"
@@ -40,6 +39,6 @@ export const MissedDeadlinePolicy = () => {
 					text="Zero Tolerance"
 				/>
 			</div>
-		</div>
+		</section>
 	)
 }

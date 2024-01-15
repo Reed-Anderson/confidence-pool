@@ -1,4 +1,5 @@
 "use client"
+import SectionHeader from "@components/sectionHeader"
 import { useCreateStore } from "./create.store"
 import { RadioOption } from "./radioOption"
 
@@ -8,10 +9,8 @@ export const CorrectScoreBonus = () => {
 		(state) => state.setCorrectScoreBonus
 	)
 	return (
-		<div className="flex-grow max-w-xl">
-			<h2 className="pt-3 pb-1 font-semibold text-sm">
-				Correct Score Bonus
-			</h2>
+		<section className="flex-grow max-w-xl">
+			<SectionHeader title="Correct Score Bonus" />
 			<div className="flex flex-col gap-2">
 				<RadioOption
 					description="Players can score double points for correctly predicting the score in addition to the correct outcome."
@@ -30,6 +29,6 @@ export const CorrectScoreBonus = () => {
 					text="No Bonus"
 				/>
 			</div>
-		</div>
+		</section>
 	)
 }
