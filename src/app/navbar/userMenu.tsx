@@ -7,9 +7,10 @@ import {
 	FaRightToBracket
 } from "react-icons/fa6"
 import { NavbarMenu } from "./navbarMenu"
+import { nextAuthOptions } from "../api/auth/[...nextauth]/options"
 
 export const UserMenu = async () => {
-	const serverSession = await getServerSession()
+	const serverSession = await getServerSession(nextAuthOptions)
 
 	if (serverSession) {
 		return (
