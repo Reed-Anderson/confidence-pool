@@ -1,3 +1,7 @@
+////////////////////////////////////////////////////////////////////////////////
+// General
+////////////////////////////////////////////////////////////////////////////////
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -8,16 +12,49 @@ datasource db {
   relationMode = "prisma"
 }
 
+////////////////////////////////////////////////////////////////////////////////
+// Models
+////////////////////////////////////////////////////////////////////////////////
+
 model SupportedLeague {
-  id        Int    @id @default(autoincrement())
-  name      String @unique
-  shortName String @default("")
-  logo      String @default("")
+  id                    Int     @id @default(autoincrement())
+  name                  String  @unique
+  shortName             String  @default("")
+  logo                  String  @default("")
+  allowDraws            Boolean @default(false)
+  allowScorePredictions Boolean @default(true)
+  pools                 Pool[]
 }
 
 model User {
-  id       String      @id
+  id       String @id
   email    String
   provider String
   name     String
+}
+
+model Pool {
+  id                   Int                  @id @default(autoincrement())
+  name                 String
+  supportedLeague      SupportedLeague      @relation(fields: [supportedLeagueId], references: [id])
+  supportedLeagueId    Int
+  missedDeadlinePolicy MissedDeadlinePolicy
+  correctScoreBonus    CorrectScoreBonus
+
+  @@index([supportedLeagueId], name: "supported_league_id")
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Enums
+////////////////////////////////////////////////////////////////////////////////
+
+enum MissedDeadlinePolicy {
+  GRACE_WEEK
+  LOW_SCORE
+  ZERO_TOLERANCE
+}
+
+enum CorrectScoreBonus {
+  DOUBLE_POINTS
+  NO_BONUS
 }

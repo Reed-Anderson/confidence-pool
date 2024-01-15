@@ -2,5 +2,8 @@
 	"editor.defaultFormatter": "biomejs.biome",
 	"editor.formatOnSave": true,
 	"editor.formatOnPaste": true,
-	"css.lint.unknownAtRules": "ignore"
+	"css.lint.unknownAtRules": "ignore",
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma"
+	}
 }
