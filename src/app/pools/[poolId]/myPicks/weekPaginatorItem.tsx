@@ -6,7 +6,7 @@ import {
 	FaCheck,
 	FaHandsHelping,
 	FaMedal,
-	FaRegClock,
+	FaRegClock
 } from "react-icons/fa"
 
 export enum WeekStatus {
@@ -15,7 +15,7 @@ export enum WeekStatus {
 	MissedDeadline = 2,
 	Submitted = 3,
 	SubmittedEarly = 4,
-	Winner = 5,
+	Winner = 5
 }
 
 interface WeekPaginatorItemProps {
@@ -31,7 +31,7 @@ export const WeekPaginatorItem = (props: WeekPaginatorItemProps) => {
 		if (props.isSelected) {
 			scrollRef.current?.scrollIntoView({
 				inline: "center",
-				block: "nearest",
+				block: "nearest"
 			})
 		}
 	}, [props.isSelected])
@@ -52,8 +52,8 @@ export const WeekPaginatorItem = (props: WeekPaginatorItemProps) => {
 						!props.isSelected,
 					"font-light": !props.isSelected,
 					"bg-white border border-gray-300": props.isSelected,
-					"text-gray-900": props.isSelected,
-				},
+					"text-gray-900": props.isSelected
+				}
 			)}
 			ref={scrollRef as LegacyRef<HTMLButtonElement> /* TODO: ?? */}
 			type="button"

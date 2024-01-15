@@ -4,14 +4,17 @@ import { TileContainer } from "@components/tileContainer"
 import Link from "next/link"
 import { AddPoolButton } from "./addPoolButton"
 import { EmptyPoolsContainer } from "./emptyPoolsContainer"
+import { useSignInRequired } from "@src/lib/useSignInRequired"
 
-export default function PoolsPage() {
+export default async function PoolsPage() {
+	await useSignInRequired()
+
 	const pools = [
 		{
 			name: "Reed's Cool Pool",
 			image: "/mls.png",
-			id: 1,
-		},
+			id: 1
+		}
 	]
 	return (
 		<>

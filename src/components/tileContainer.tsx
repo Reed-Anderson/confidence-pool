@@ -11,7 +11,7 @@ export const TileContainer = (props: TileContainerProps) => {
 		<div
 			className={classNames(
 				"flex flex-wrap flex-col pb-4 md:flex-row items-center gap-8",
-				props.className,
+				props.className
 			)}
 		>
 			{props.children}

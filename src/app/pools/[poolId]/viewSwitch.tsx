@@ -10,7 +10,7 @@ interface ViewSwitchProps {
 export const ViewSwitch = (props: ViewSwitchProps) => {
 	const [view] = useQueryState(
 		"view",
-		parseAsStringEnum<View>(Object.values(View)).withDefault(View.MyPicks),
+		parseAsStringEnum<View>(Object.values(View)).withDefault(View.MyPicks)
 	)
 	return props.viewLookup[view]
 }

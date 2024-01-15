@@ -12,7 +12,7 @@ export const HeroSection = () => {
 			</h2>
 			<LinkButton
 				href="/create"
-				buttonClassName="border bg-secondary text-white tracking-wide"
+				buttonClassName="border bg-gray-800 text-white tracking-wide"
 			>
 				Challenge Your Friends
 			</LinkButton>

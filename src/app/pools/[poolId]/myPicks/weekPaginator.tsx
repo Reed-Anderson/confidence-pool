@@ -1,7 +1,7 @@
 "use client"
 import * as ScrollArea from "@radix-ui/react-scroll-area"
-import { WeekPaginatorItem, WeekStatus } from "./weekPaginatorItem"
 import { useHorizontalScroll } from "@src/lib/useHorizontalScroll"
+import { WeekPaginatorItem, WeekStatus } from "./weekPaginatorItem"
 
 /**
  * Component for rendering a week paginator.

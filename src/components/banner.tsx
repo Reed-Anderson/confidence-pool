@@ -24,7 +24,7 @@ export const Banner = (props: BannerProps) => {
 				<h1
 					className={classNames("flex", "flex-col", "px-4 md:px-0", {
 						"py-2": !!props.secondaryTitle,
-						"py-4": !props.secondaryTitle,
+						"py-4": !props.secondaryTitle
 					})}
 				>
 					<span>{props.title}</span>

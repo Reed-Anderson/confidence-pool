@@ -6,7 +6,7 @@ import {
 	Item,
 	Portal,
 	Root,
-	Trigger,
+	Trigger
 } from "@radix-ui/react-dropdown-menu"
 import { Fragment } from "react"
 import { NavbarMenuProps } from "./navbarMenu"

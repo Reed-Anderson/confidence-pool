@@ -9,13 +9,13 @@ export const MainMenu = () => {
 				{
 					href: "leagues",
 					startContent: <FaTrophy />,
-					title: "Supported Leagues",
+					title: "Supported Leagues"
 				},
 				{
 					href: "rules",
 					startContent: <FaQuestion />,
-					title: "How To Play",
-				},
+					title: "How To Play"
+				}
 			]}
 		>
 			<div className="text-white hover:bg-gray-100 hover:bg-opacity-20 p-2">

@@ -28,5 +28,5 @@ export const useCreateStore = create<CreateStoreInterface>((set) => ({
 
 	/* Selected League */
 	selectedLeagueId: -1,
-	setSelectedLeagueId: (id: number) => set(() => ({ selectedLeagueId: id })),
+	setSelectedLeagueId: (id: number) => set(() => ({ selectedLeagueId: id }))
 }))

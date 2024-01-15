@@ -12,7 +12,7 @@ export const TextInput = (props: TextInputProps) => {
 			{...props}
 			className={classNames(
 				"border h-10 w-72 indent-2 font-light rounded-sm focus:border-blue-500 focus:outline-none",
-				props.className,
+				props.className
 			)}
 		/>
 	)

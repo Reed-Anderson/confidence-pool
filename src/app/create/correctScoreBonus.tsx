@@ -5,7 +5,7 @@ import { RadioOption } from "./radioOption"
 export const CorrectScoreBonus = () => {
 	const correctScoreBonus = useCreateStore((state) => state.correctScoreBonus)
 	const setCorrectScoreBonus = useCreateStore(
-		(state) => state.setCorrectScoreBonus,
+		(state) => state.setCorrectScoreBonus
 	)
 	return (
 		<div className="flex-grow max-w-xl">

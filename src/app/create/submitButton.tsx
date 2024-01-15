@@ -16,8 +16,8 @@ export const SubmitButton = () => {
 			className={classNames(
 				"bg-gray-700 text-white my-4 w-full md:w-auto",
 				{
-					"opacity-40": !formIsValid,
-				},
+					"opacity-40": !formIsValid
+				}
 			)}
 		>
 			Create

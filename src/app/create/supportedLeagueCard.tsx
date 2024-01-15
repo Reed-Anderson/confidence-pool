@@ -13,7 +13,7 @@ interface SupportedLeagueCardProps {
 export const SupportedLeagueCard = (props: SupportedLeagueCardProps) => {
 	const selectedLeagueId = useCreateStore((state) => state.selectedLeagueId)
 	const setSelectedLeagueId = useCreateStore(
-		(state) => state.setSelectedLeagueId,
+		(state) => state.setSelectedLeagueId
 	)
 	return (
 		<ImageCard

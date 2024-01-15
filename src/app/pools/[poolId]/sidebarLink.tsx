@@ -15,13 +15,13 @@ export enum View {
 	Standings = "standings",
 	WeeklyResults = "weeklyResults",
 	Settings = "settings",
-	Commissioner = "commissioner",
+	Commissioner = "commissioner"
 }
 
 export const SidebarLink = (props: SidebarLinkProps) => {
 	const [view, setView] = useQueryState(
 		"view",
-		parseAsStringEnum<View>(Object.values(View)).withDefault(View.MyPicks),
+		parseAsStringEnum<View>(Object.values(View)).withDefault(View.MyPicks)
 	)
 	const isSelected = view === props.view
 	return (
@@ -47,7 +47,7 @@ export const SidebarLink = (props: SidebarLinkProps) => {
 				"bg-white": isSelected,
 				"border-gray-300": isSelected,
 				"shadow-sm": isSelected,
-				border: isSelected,
+				border: isSelected
 			})}
 			onClick={() => setView(props.view)}
 			type="button"
@@ -64,7 +64,7 @@ export const SidebarLink = (props: SidebarLinkProps) => {
 						"transition-all",
 						"duration-150",
 						"ease-in",
-						{ "group-hover:opacity-100": !isSelected },
+						{ "group-hover:opacity-100": !isSelected }
 					)}
 				/>
 			</div>

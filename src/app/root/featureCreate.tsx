@@ -9,11 +9,15 @@ export const FeatureCreate = () => {
 			<ul className="p-2 list-[circle]">
 				<li className="p-1 ml-4">
 					<span className="mr-2">NFL</span>
-					<Chip className="blue-tag">Coming Aug 2024!</Chip>
+					<Chip className="bg-gray-600 text-white">
+						Coming Aug 2024!
+					</Chip>
 				</li>
 				<li className="p-1 ml-4">
 					<span className="mr-2">MLS</span>
-					<Chip className="blue-tag">Coming Feb 2024!</Chip>
+					<Chip className="bg-gray-600 text-white">
+						Coming Feb 2024!
+					</Chip>
 				</li>
 				<li className="p-1 ml-4">And more coming soon!</li>
 			</ul>

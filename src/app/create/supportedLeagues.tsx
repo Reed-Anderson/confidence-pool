@@ -1,22 +1,20 @@
-import { PrismaClient } from "@prisma/client"
 import { unstable_cache } from "next/cache"
 import { SupportedLeagueCard } from "./supportedLeagueCard"
-
-const prisma = new PrismaClient()
+import { prisma } from "@src/lib/prisma"
 
 export const SupportedLeagues = async () => {
 	const cacheGetSupportedLeagues = unstable_cache(
 		() =>
 			prisma.supportedLeague.findMany({
 				orderBy: {
-					name: "asc",
-				},
+					name: "asc"
+				}
 			}),
 		["GetSupportedLeagues"],
 		{
 			tags: ["SupportedLeagues"],
-			revalidate: 60 * 60 * 24,
-		},
+			revalidate: 60 * 60 * 24
+		}
 	)
 
 	const supportedLeauges = await cacheGetSupportedLeagues()

@@ -21,7 +21,7 @@ export default function PoolDetailsPage() {
 							standings: <StandingsView />,
 							weeklyResults: <div />,
 							settings: <div />,
-							commissioner: <div />,
+							commissioner: <div />
 						}}
 					/>
 				</div>

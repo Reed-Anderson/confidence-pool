@@ -24,12 +24,12 @@ export const LabeledTextInput = (props: LabeledTextInputProps) => {
 					{
 						"bg-white text-gray-600 px-2 text-xs":
 							labelType === "label",
-						"-top-2 left-1 z-10": labelType === "label",
+						"-top-2 left-1 z-10": labelType === "label"
 					},
 					{
 						"text-gray-500 top-2 left-2":
-							labelType === "placeholder",
-					},
+							labelType === "placeholder"
+					}
 				)}
 				htmlFor={props.inputId}
 			>

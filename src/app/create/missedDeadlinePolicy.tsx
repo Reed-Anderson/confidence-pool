@@ -4,10 +4,10 @@ import { RadioOption } from "./radioOption"
 
 export const MissedDeadlinePolicy = () => {
 	const missedDeadlinePolicy = useCreateStore(
-		(state) => state.missedDeadlinePolicy,
+		(state) => state.missedDeadlinePolicy
 	)
 	const setMissedDeadlinePolicy = useCreateStore(
-		(state) => state.setMissedDeadlinePolicy,
+		(state) => state.setMissedDeadlinePolicy
 	)
 	return (
 		<div className="flex-grow max-w-xl">

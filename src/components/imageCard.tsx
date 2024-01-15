@@ -31,7 +31,7 @@ export const ImageCard = (props: ImageCardProps) => {
 				"hover:scale-105",
 				"border",
 				"w-72",
-				{ border: props.selected, "border-gray-900": props.selected },
+				{ border: props.selected, "border-gray-900": props.selected }
 			)}
 			onClick={props.onClick}
 			tabIndex={props.tabIndex}

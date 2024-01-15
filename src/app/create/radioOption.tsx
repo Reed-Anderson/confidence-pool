@@ -16,11 +16,11 @@ export const RadioOption = (props: RadioOptionProps) => {
 			className={classNames(
 				"flex gap-4 items-center p-2 rounded-md border border-gray-900",
 				{
-					"border bg-white": selected,
+					"border bg-white": selected
 				},
 				{
-					"border-transparent hover:border-gray-300": !selected,
-				},
+					"border-transparent hover:border-gray-300": !selected
+				}
 			)}
 		>
 			<input
