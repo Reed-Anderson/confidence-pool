@@ -1,10 +1,10 @@
 import { Banner } from "@components/banner"
+import { useSignInRequired } from "@src/lib/useSignInRequired"
 import { CorrectScoreBonus } from "./correctScoreBonus"
 import { LeagueSelection } from "./leagueSelection"
 import { MissedDeadlinePolicy } from "./missedDeadlinePolicy"
 import { PoolName } from "./poolName"
 import { SubmitButton } from "./submitButton"
-import { useSignInRequired } from "@src/lib/useSignInRequired"
 
 export const dynamic = "force-dynamic"
 export default async function CreatePage() {

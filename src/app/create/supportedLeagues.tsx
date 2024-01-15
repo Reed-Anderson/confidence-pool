@@ -1,6 +1,6 @@
+import { prisma } from "@src/lib/prisma"
 import { unstable_cache } from "next/cache"
 import { SupportedLeagueCard } from "./supportedLeagueCard"
-import { prisma } from "@src/lib/prisma"
 
 export const SupportedLeagues = async () => {
 	const cacheGetSupportedLeagues = unstable_cache(

@@ -1,7 +1,7 @@
-import { SignInButton } from "./signInButton"
 import { FaDiscord } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
 import { FcGoogle } from "react-icons/fc"
+import { SignInButton } from "./signInButton"
 
 export default function LoginPage() {
 	return (
